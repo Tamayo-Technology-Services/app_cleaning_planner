@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoComponent matches snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "marginBottom": 30,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "black",
+        "fontSize": 48,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Logo
+  </Text>
+</View>
+`;

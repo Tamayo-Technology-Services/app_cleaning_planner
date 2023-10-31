@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialButtons matches snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginBottom": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "backgroundColor": "#3b5998",
+        "borderRadius": 25,
+        "flex": 1,
+        "marginRight": 10,
+        "opacity": 1,
+        "paddingHorizontal": 30,
+        "paddingVertical": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      Facebook
+    </Text>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "backgroundColor": "#3b5998",
+        "borderRadius": 25,
+        "flex": 1,
+        "marginRight": 10,
+        "opacity": 1,
+        "paddingHorizontal": 30,
+        "paddingVertical": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      Google
+    </Text>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "backgroundColor": "#3b5998",
+        "borderRadius": 25,
+        "flex": 1,
+        "marginRight": 10,
+        "opacity": 1,
+        "paddingHorizontal": 30,
+        "paddingVertical": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      Apple
+    </Text>
+  </View>
+</View>
+`;
