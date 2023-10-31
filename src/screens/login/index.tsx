@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Button, TouchableOpacity } from 'react-native';
 import { styles } from './styles';
+import LogoComponent from '../../components/LogoComponent';
+import TextInputComponent from '../../components/TextInputComponent';
+import SocialButtons from '../../components/SocialButtons';
+import CreateAccountLink from '../../components/CreateAccountLink';
 
 interface LoginProps {
   onLogin: (username: string, password: string) => void;
@@ -15,11 +19,40 @@ const LoginScreen: React.FC<LoginProps> = ({ onLogin }) => {
     // For simplicity, always consider it successful for this example
     onLogin(username, password);
   };
+  const handleCreateAccountPress = () => {
+    // Handle the action when "Create an account" link is pressed
+    // For example, navigate to the registration screen
+    // You can implement your own navigation logic here
+  };
+
+  const handleSocialMediaLogin = (socialMedia: string) => {
+    // Handle social media login based on the selected platform
+    // For example, you can implement OAuth authentication for each platform
+  };
 
   return (
     <View style={styles.container}>
-      <Text>Login Screen</Text>
-      <TextInput
+        <LogoComponent />
+        <Text>Login</Text>
+        <TextInputComponent placeholder="Email" keyboardType="email-address" />
+        <TextInputComponent placeholder="Password" secureTextEntry />
+
+        <TouchableOpacity>
+            <Text style={styles.forgotPasswordText}>Forgot password?</Text>
+        </TouchableOpacity>
+        {/* <Button title="Login" onPress={handleLogin} /> */}
+        <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
+            <Text style={styles.loginButtonText}>Login</Text>
+        </TouchableOpacity>
+        <Text style={styles.orText}>Or Login with:</Text>
+        <SocialButtons
+            onPressFacebook={() => handleSocialMediaLogin('facebook')}
+            onPressGoogle={() => handleSocialMediaLogin('google')}
+            onPressApple={() => handleSocialMediaLogin('apple')}
+        />
+        <CreateAccountLink onPress={handleCreateAccountPress} />
+
+      {/* <TextInput
         style={styles.input}
         placeholder="Username"
         value={username}
@@ -31,8 +64,7 @@ const LoginScreen: React.FC<LoginProps> = ({ onLogin }) => {
         secureTextEntry
         value={password}
         onChangeText={(text) => setPassword(text)}
-      />
-      <Button title="Login" onPress={handleLogin} />
+      /> */}
     </View>
   );
 };
