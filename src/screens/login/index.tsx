@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { styles } from './styles';
 
 interface LoginProps {
   onLogin: (username: string, password: string) => void;
@@ -35,20 +36,5 @@ const LoginScreen: React.FC<LoginProps> = ({ onLogin }) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  input: {
-    width: '80%',
-    height: 40,
-    marginVertical: 10,
-    borderWidth: 1,
-    padding: 10,
-  },
-});
 
 export default LoginScreen;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import LoginScreen from './src/screens/login';
+import HomeScreen from './src/screens/home';
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -18,10 +19,7 @@ const App: React.FC = () => {
   return (
     <View style={styles.container}>
       {isAuthenticated ? (
-        <View style={styles.content}>
-          <Text>Welcome to the Home Screen!</Text>
-          <Button title="Logout" onPress={handleLogout} />
-        </View>
+        <HomeScreen onLogout={handleLogout} />
       ) : (
         <LoginScreen onLogin={handleLogin} />
       )}
@@ -32,11 +30,6 @@ const App: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  content: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });
 
