@@ -3,6 +3,7 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 import LoginScreen from './src/screens/login';
 import HomeScreen from './src/screens/home';
 import PasswordResetForm from './src/screens/forgot_password';
+import RegisterScreen from './src/screens/register';
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -13,6 +14,10 @@ const App: React.FC = () => {
     setIsAuthenticated(true);
   };
 
+  const handleRegister = (email: string, password: string, confirm_password: string) => {
+
+  }
+
   const handleLogout = () => {
     setIsAuthenticated(false);
   };
@@ -22,8 +27,9 @@ const App: React.FC = () => {
       {isAuthenticated ? (
         <HomeScreen onLogout={handleLogout} />
       ) : (
-        <PasswordResetForm />
-        // <LoginScreen onLogin={handleLogin} />
+        <LoginScreen onLogin={handleLogin} />
+        // <PasswordResetForm />
+        // <RegisterScreen onRegister={handleRegister} />
       )}
     </View>
   );
