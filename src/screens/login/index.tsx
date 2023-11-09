@@ -51,20 +51,6 @@ const LoginScreen: React.FC<LoginProps> = ({ onLogin }) => {
             onPressApple={() => handleSocialMediaLogin('apple')}
         />
         <CreateAccountLink onPress={handleCreateAccountPress} />
-
-      {/* <TextInput
-        style={styles.input}
-        placeholder="Username"
-        value={username}
-        onChangeText={(text) => setUsername(text)}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        secureTextEntry
-        value={password}
-        onChangeText={(text) => setPassword(text)}
-      /> */}
     </View>
   );
 };

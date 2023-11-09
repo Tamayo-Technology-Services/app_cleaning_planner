@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import LoginScreen from './src/screens/login';
 import HomeScreen from './src/screens/home';
+import PasswordResetForm from './src/screens/forgot_password';
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       {isAuthenticated ? (
         <HomeScreen onLogout={handleLogout} />
       ) : (
+        // <PasswordResetForm />
         <LoginScreen onLogin={handleLogin} />
       )}
     </View>
