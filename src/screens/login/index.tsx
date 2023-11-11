@@ -33,8 +33,8 @@ const LoginScreen: React.FC<LoginProps> = ({ onLogin }) => {
   return (
     <View style={styles.container}>
         <LogoComponent />
-        <Text>Login</Text>
-        <TextInputComponent placeholder="Email" keyboardType="email-address" />
+        <Text style={styles.loginText}>Login</Text>
+        <TextInputComponent placeholder="Email" keyboardType="email-address" showIcon={true} />
         <TextInputComponent placeholder="Password" secureTextEntry />
 
         <TouchableOpacity>

@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    // alignItems: 'center',
     padding: 10,
   },
   input: {
@@ -36,4 +36,11 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
     fontSize: 18,
   },
+  loginText:{
+    fontWeight: 'bold',
+    textAlign: 'left',
+    paddingLeft: 40,
+    paddingBottom: 10,
+
+  }
 })

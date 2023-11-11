@@ -29,6 +29,7 @@ const App: React.FC = () => {
         <HomeScreen onLogout={handleLogout} />
       ) : (
         <LoginScreen onLogin={handleLogin} />
+        // <HomeScreen onLogout={handleLogout} />
         // <PasswordResetForm />
         // <RegisterScreen onRegister={handleRegister} />
         // <WelcomePage />

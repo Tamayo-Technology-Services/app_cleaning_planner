@@ -11,4 +11,8 @@ logoContainer: {
     fontSize: 48,
     fontWeight: 'bold',
   },
+  logo: {
+    width: 90,
+    height: 90,
+  },
 })
