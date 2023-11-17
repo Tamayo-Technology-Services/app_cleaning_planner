@@ -28,10 +28,10 @@ const App: React.FC = () => {
       {isAuthenticated ? (
         <HomeScreen onLogout={handleLogout} />
       ) : (
-        <LoginScreen onLogin={handleLogin} />
+        // <LoginScreen onLogin={handleLogin} />
         // <HomeScreen onLogout={handleLogout} />
         // <PasswordResetForm />
-        // <RegisterScreen onRegister={handleRegister} />
+        <RegisterScreen onRegister={handleRegister} />
         // <WelcomePage />
       )}
     </View>

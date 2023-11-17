@@ -29,15 +29,17 @@ const RegisterScreen: React.FC<RegisterProps> = ({ onRegister }) => {
   return (
     <View style={styles.container}>
         <LogoComponent />
-        <Text>Register</Text>
-        <TextInputComponent placeholder="Email" keyboardType="email-address" />
-        <TextInputComponent placeholder="Password" secureTextEntry />
-        <TextInputComponent placeholder="Confirm Password" secureTextEntry />
+        <Text style={styles.loginText}>Register</Text>
+        <TextInputComponent placeholder="Email" keyboardType="email-address" image_type='email' />
+        <TextInputComponent placeholder="Password" secureTextEntry image_type='password' />
+        <TextInputComponent placeholder="Confirm Password" secureTextEntry image_type='password' />
 
         {/* <Button title="Login" onPress={handleLogin} /> */}
-        <TouchableOpacity style={styles.loginButton} onPress={handleRegister}>
-            <Text style={styles.loginButtonText}>Register</Text>
-        </TouchableOpacity>
+        <View style={styles.containerButton}>
+          <TouchableOpacity style={styles.loginButton} onPress={handleRegister}>
+              <Text style={styles.loginButtonText}>Register</Text>
+          </TouchableOpacity>
+        </View>
         <Text style={styles.orText}>Or Register with:</Text>
         <SocialButtons
             onPressFacebook={() => handleSocialMediaLogin('facebook')}

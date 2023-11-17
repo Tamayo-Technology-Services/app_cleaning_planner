@@ -39,7 +39,7 @@ export const styles = StyleSheet.create({
   },
   orText: {
     color: 'black',
-    left: 20,
+    left: 30,
     marginTop: 20,
     marginBottom: 10,
     fontSize: 12,
@@ -48,7 +48,7 @@ export const styles = StyleSheet.create({
   loginText:{
     fontWeight: 'bold',
     textAlign: 'left',
-    paddingLeft: 40,
+    paddingLeft: 30,
     paddingBottom: 10,
 
   }
