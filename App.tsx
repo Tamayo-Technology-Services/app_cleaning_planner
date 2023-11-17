@@ -5,6 +5,8 @@ import HomeScreen from './src/screens/home';
 import PasswordResetForm from './src/screens/forgot_password';
 import RegisterScreen from './src/screens/register';
 import WelcomePage from './src/screens/welcome';
+import MyDataScreen from './src/screens/my_data';
+import MyCompanyScreen from './src/screens/my_company';
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -32,7 +34,9 @@ const App: React.FC = () => {
         // <HomeScreen onLogout={handleLogout} />
         // <PasswordResetForm />
         // <RegisterScreen onRegister={handleRegister} />
-        <WelcomePage />
+        // <WelcomePage />
+        // <MyDataScreen onContinue={() => {}} />
+        <MyCompanyScreen onContinue={() => {}} />
       )}
     </View>
   );

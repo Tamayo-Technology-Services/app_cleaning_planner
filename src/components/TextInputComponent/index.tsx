@@ -34,7 +34,9 @@ const TextInputComponent: React.FC<TextInputComponentProps> = ({ placeholder, ke
         autoCapitalize="none"
         {...rest}
       />
-      <Image source={image} style={{position: 'absolute', right: 30, top: 19}} />
+      {image_type !== '' &&(
+        <Image source={image} style={{position: 'absolute', right: 30, top: 19}} />
+        )}  
     </View>
   );
 };
