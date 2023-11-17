@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TouchableOpacity, Text, StyleProp, ViewStyle } from 'react-native';
+import { View, TouchableOpacity, Image, StyleProp, ViewStyle } from 'react-native';
 import { styles } from './styles';
 
 interface SocialButtonsProps {
@@ -10,16 +10,19 @@ interface SocialButtonsProps {
 }
 
 const SocialButtons: React.FC<SocialButtonsProps> = ({ onPressFacebook, onPressGoogle, onPressApple, containerStyle }) => {
+  const facebookImage = require('./../../assets/images/facebook.png');
+  const googleImage = require('./../../assets/images/google.png');
+  const appleImage = require('./../../assets/images/apple.png');
   return (
     <View style={[styles.socialButtonContainer, containerStyle]}>
       <TouchableOpacity style={styles.socialButton} onPress={onPressFacebook}>
-        <Text style={styles.socialButtonText}>Facebook</Text>
+        <Image source={facebookImage} style={styles.socialButtonImage} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.socialButton} onPress={onPressGoogle}>
-        <Text style={styles.socialButtonText}>Google</Text>
+        <Image source={googleImage} style={styles.socialButtonImage} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.socialButton} onPress={onPressApple}>
-        <Text style={styles.socialButtonText}>Apple</Text>
+        <Image source={appleImage} style={styles.socialButtonImage} />
       </TouchableOpacity>
     </View>
   );

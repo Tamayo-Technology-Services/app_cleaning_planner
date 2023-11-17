@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleProp, TextStyle } from 'react-native';
+import { TouchableOpacity, Text, View, StyleProp, TextStyle } from 'react-native';
 import { styles } from './styles';
 
 interface CreateAccountLinkProps {
@@ -8,11 +8,14 @@ interface CreateAccountLinkProps {
 
 const CreateAccountLink: React.FC<CreateAccountLinkProps> = ({ onPress }) => {
   return (
-    <TouchableOpacity onPress={onPress}>
-      <Text style={styles.createAccountText}>
-        Don't have an account? <Text style={styles.createAccountText}>Create an account</Text>
-      </Text>
-    </TouchableOpacity>
+      <View style={{ flexDirection: 'row', left: 15, }}>
+        <Text style={styles.text}>
+          Don't have an account?{' '}
+          <TouchableOpacity onPress={onPress}>
+            <Text style={styles.createAccountText}>Create an account</Text>
+          </TouchableOpacity>
+        </Text>
+      </View>
   );
 };
 

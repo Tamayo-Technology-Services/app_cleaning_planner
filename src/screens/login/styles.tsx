@@ -16,25 +16,34 @@ export const styles = StyleSheet.create({
   },
   forgotPasswordText: {
     textAlign: 'right',
+    right: 20,
     marginBottom: 20,
-    color: 'blue',
+    fontSize: 12,
+    fontWeight: '300',
+  },
+  containerButton: {
+    justifyContent: 'center', 
+    alignItems: 'center'
   },
   loginButton: {
-    backgroundColor: 'blue',
-    paddingVertical: 15,
-    paddingHorizontal: 50,
-    borderRadius: 25,
+    width: '35%',
+    backgroundColor: '#0070F4',
+    paddingVertical: 10,
+    borderRadius: 7,
   },
   loginButtonText: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 12,
+    fontWeight: 'bold',
     textAlign: 'center',
   },
   orText: {
     color: 'black',
+    left: 20,
     marginTop: 20,
     marginBottom: 10,
-    fontSize: 18,
+    fontSize: 12,
+    fontWeight: '300'
   },
   loginText:{
     fontWeight: 'bold',

@@ -34,16 +34,18 @@ const LoginScreen: React.FC<LoginProps> = ({ onLogin }) => {
     <View style={styles.container}>
         <LogoComponent />
         <Text style={styles.loginText}>Login</Text>
-        <TextInputComponent placeholder="Email" keyboardType="email-address" showIcon={true} />
-        <TextInputComponent placeholder="Password" secureTextEntry />
+        <TextInputComponent placeholder="Email" keyboardType="email-address" showIcon={true} image_type="email" />
+        <TextInputComponent placeholder="Password" secureTextEntry image_type="password" />
 
         <TouchableOpacity>
             <Text style={styles.forgotPasswordText}>Forgot password?</Text>
         </TouchableOpacity>
         {/* <Button title="Login" onPress={handleLogin} /> */}
-        <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-            <Text style={styles.loginButtonText}>Login</Text>
-        </TouchableOpacity>
+        <View style={styles.containerButton}>
+          <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
+              <Text style={styles.loginButtonText}>Login</Text>
+          </TouchableOpacity>
+        </View>
         <Text style={styles.orText}>Or Login with:</Text>
         <SocialButtons
             onPressFacebook={() => handleSocialMediaLogin('facebook')}
