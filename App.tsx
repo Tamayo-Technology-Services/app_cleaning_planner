@@ -31,8 +31,8 @@ const App: React.FC = () => {
         // <LoginScreen onLogin={handleLogin} />
         // <HomeScreen onLogout={handleLogout} />
         // <PasswordResetForm />
-        <RegisterScreen onRegister={handleRegister} />
-        // <WelcomePage />
+        // <RegisterScreen onRegister={handleRegister} />
+        <WelcomePage />
       )}
     </View>
   );

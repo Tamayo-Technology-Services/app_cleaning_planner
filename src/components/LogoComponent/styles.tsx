@@ -12,6 +12,7 @@ logoContainer: {
     fontWeight: 'bold',
   },
   logo: {
-    resizeMode: 'contain',
+    width: '25%',
+    resizeMode: 'contain'
   },
 })

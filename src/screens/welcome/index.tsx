@@ -1,25 +1,48 @@
 import React from 'react';
-import { View, Image, Text, Button, StyleSheet } from 'react-native';
+import { View, Image, Text, Button, StyleSheet, TouchableOpacity } from 'react-native';
+import LogoComponent from '../../components/LogoComponent';
 
 const WelcomePage: React.FC = () => {
+  const handleContinue = () => {
+    // Perform authentication logic here, e.g., call an API to validate credentials
+    // For simplicity, always consider it successful for this example
+    // onLogin(username, password);
+  };
+
   return (
     <View style={styles.container}>
-        {/* TODO: here should go the LOGO */}
-      {/* <Image source={require('./welcome-page.png')} style={styles.image} /> */}
+      <LogoComponent />
       <Text style={styles.title}>Welcome Belky!</Text>
       <Text style={styles.text}>Now let's register your data</Text>
-      <Button title="Continue" onPress={() => {
-        // TODO: Navigate to the next screen
-      }} />
+      <View style={styles.containerButton}>
+        <TouchableOpacity style={styles.loginButton} onPress={handleContinue}>
+            <Text style={styles.loginButtonText}>Continue</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  containerButton: {
+    justifyContent: 'center', 
+    alignItems: 'center'
+  },
+  loginButton: {
+    width: '35%',
+    backgroundColor: '#0070F4',
+    paddingVertical: 10,
+    borderRadius: 7,
+  },
+  loginButtonText: {
+    color: 'white',
+    fontSize: 12,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
   },
   image: {
     width: 300,
